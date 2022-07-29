@@ -58,7 +58,7 @@ function NavBar({ loggedIn }) {
             }}
             sx={{ textTransform: 'none' }}
           >
-            View Saved Jobs
+            View Properties
           </Button>
           <Divider sx={{ backgroundColor: 'white' }} />
           <Button
@@ -68,7 +68,7 @@ function NavBar({ loggedIn }) {
             }}
             sx={{ textTransform: 'none' }}
           >
-            View Your Resume
+            View Your Portfolio
           </Button>
         </Box>
       );
@@ -144,10 +144,10 @@ function NavBar({ loggedIn }) {
             </Popper>
 
             <Button onClick={() => navigate('/profile')}>
-              
+
             </Button>
 
-            <PrimaryButton text="Employers / Post a Job" sx={{ pl: 2, pr: 2, ml: 2 }} />
+            <PrimaryButton text="Add Property" sx={{ pl: 2, pr: 2, ml: 2 }} />
 
           </Box>
         </Toolbar>
