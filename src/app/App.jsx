@@ -6,7 +6,7 @@ import ProfileProvider from './components/Profile/ProfileContext';
 import CssBaseline from '@mui/material/CssBaseline';
 // import '../App.css';
 import {
-  Home, Dashboard, LogIn, SignUp, Jobs, Profile,
+  Home, Dashboard, LogIn, SignUp, Properties, Profile,
 } from './pages';
 import { useWindowSize } from './utils/customHooks';
 import NavBar from './components/NavBar';
@@ -62,9 +62,9 @@ function App() {
                 exact
               />
               <Route
-                path="/jobs"
+                path="/properties"
                 element={
-                  loggedIn ? <Jobs /> : <Home newLogIn={newLogIn} />
+                  loggedIn ? <Properties /> : <Home newLogIn={newLogIn} />
                 }
                 exact
               />
