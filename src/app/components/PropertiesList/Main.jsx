@@ -30,12 +30,7 @@ function Main() {
         overflowY: 'auto', maxHeight: 700, width: 600, m: 2, mr: 4,
       }}
       >
-        {propertiesData.map((Property, index) => {
-          console.log(propertyFocuState.url)
-          return Property.url === propertyFocuState.url ?
-          <PropertyItem key={`Property-${index + 1}`} selected={true} handleFocus={mainFocusFunction} Property={Property} /> :
-          <PropertyItem key={`Property-${index + 1}`} handleFocus={mainFocusFunction} Property={Property} />
-        })}
+
       </Box>
 
     </Box>
@@ -59,3 +54,11 @@ export default Main;
 // oneClickApply
 // scroll barrrr
 //<PropertyFocusItem Property={propertyFocuState} />
+
+// this stuff below is meant to be returned in the render function in place of propertyList (maybe)
+// {propertiesData.map((property, index) => {
+//   console.log(propertyFocuState.url)
+//   return property.key === propertyFocuState.key ?
+//   <PropertyItem key={`Property-${index + 1}`} selected={true} handleFocus={mainFocusFunction} property={property} /> :
+//   <PropertyItem key={`Property-${index + 1}`} handleFocus={mainFocusFunction} property={property} />
+// })}
