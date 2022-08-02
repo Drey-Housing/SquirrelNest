@@ -3,11 +3,11 @@ import { createTheme } from '@mui/material/styles';
 export default createTheme({
   palette: {
     primary: {
-      main: '#A0835C',
+      main: '#6E7F91',
       contrastText: '#737E80',
     },
     secondary: { // works
-      main: '#737E80',
+      main: '#394C60',
       contrastText: '#fff',
     },
     xiketic: {
