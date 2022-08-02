@@ -137,7 +137,7 @@ function AccountSelection({ createAccount, newLogIn, nav }) {
               }
             }}
             sx={{
-              width: 300,
+              width: 200,
               m: 0,
               mt: 1,
               mb: 1,
